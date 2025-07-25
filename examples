@@ -1,0 +1,43 @@
+Basic TUI usage:
+sshc user@ip password action serv_path cl_path
+
+[action]
+	- get	: get a file if no path then put directly into folder
+	- put	: upload a file, needs additional path after
+	- ls : if path to a file, just list a whole folder i guess
+
+Using config
+sshc login action serv_path cl_path
+
+You can write you custom action in config
+
+START
+name
+action1
+action2
+action3
+...
+END
+
+for example
+
+START
+obsidian
+put /home/user/Documents/ObsidianVault /home/user/Server/Obsidianvault
+END
+
+You can write your own ssh request as a form of a file
+
+START
+name
+filename c_parameter parameter1 parameter2...
+END
+
+
+
+Complete cli
+sshc login shell
+
+	This will activate UI that looks like MidnightComander with commands like ls, get and put
+	Maybe made it not like mc, but rather normal shell with tab key to switch between server and client machine.
+

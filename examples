@@ -1,3 +1,31 @@
+TODO:
+	!!!!Maybe divide main file into multiple for the sake of readability
+	And also add a build tool, maybe nob or my own nobuild interpretation	
+	
+	Clean main function because now it sucks!
+	
+	Maybe rewrite get_user_pass function!
+	
+	Make some kind of security check!!!!
+		Maybe add a hash of password into config, so it will fine to use, or u will need to write password every time.
+		Add a security option to config, like ENABLE_PASS_FROM_CONFIG.
+	
+	Basic TUI usage
+		login
+		command
+	
+	Config usage:
+		get login
+		command
+	
+	Custom script
+		get login
+		find command
+		execute command line by line
+	
+	Add custom requests??
+	
+	
 Basic TUI usage:
 sshc user@ip password action serv_path cl_path
 

@@ -1,2 +1,4 @@
 #!/bin/bash
-gcc -Wall -Wextra -o main client.c
+
+
+gcc -Wall -Wextra -o bin/main src/client.o src/string.o

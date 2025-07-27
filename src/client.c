@@ -9,18 +9,21 @@ struct LOGIN{
 	char password[99];
 };
 
+void action(char *act, char *param1, char *param2){
+}
 
-void get_user_pass(struct LOGIN* login, char *userpass){
+
+void get_user_ip(struct LOGIN* login, char *userip){
 	int x = 0;
 	int y = 0;
-	while(userpass[x]!='@'){
-		login->username[x] = userpass[x];
+	while(userip[x]!='@'){
+		login->username[x] = userip[x];
 		x++;
 	}
 	login->username[x] = '\0';
 	x++;
-	while(userpass[x+y]!='\0'){
-		login->ip[y] = userpass[x+y];
+	while(userip[x+y]!='\0'){
+		login->ip[y] = userip[x+y];
 		y++;
 	}	
 	login->ip[y] = '\0';
@@ -41,7 +44,7 @@ int main(int argc, char *argv[]){
 	}
 	char* config = get_config_file();
 	printf("config: %s\n", config);
-	get_user_pass(&login, argv[1]); //placing user and pass into login
+	get_user_ip(&login, argv[1]); //placing user and ip into login
 	
 	printf("%s -> %s\n", login.username, login.ip);
 	return 0;

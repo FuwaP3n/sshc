@@ -1,4 +1,6 @@
 TODO:
+	Add function to use correct ip. For example to use LAN instead of reverse-proxy at home.
+
 	!!!!Maybe divide main file into multiple for the sake of readability
 	And also add a build tool, maybe nob or my own nobuild interpretation	
 	

@@ -1,4 +1,6 @@
 #!/bin/bash
 
 
-gcc -Wall -Wextra -o bin/main src/client.o src/string.o
+gcc -Wall -Wextra -c -o obj/client.o src/client.c
+gcc -Wall -Wextra -c -o obj/string.o src/string.c
+gcc -Wall -Wextra -o bin/main obj/client.o obj/string.o

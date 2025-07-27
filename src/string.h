@@ -3,4 +3,5 @@
 #include <stdlib.h>
 int strlen(char *a);
 char * strcomb(char *a, char *b);
+int strcmp(char *str1, char *str2);
 #endif

@@ -1,5 +1,5 @@
 #include <stdlib.h>
-#include <stdio.h>
+//#include <stdio.h>
 int strlen(char *a){
 	int length = 0;
 	while(a[length]!='\0'){

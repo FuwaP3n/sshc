@@ -1,4 +1,13 @@
 TODO:
+	TEST SERVER CONFIG FUNCTION IN CONFIG.C
+	MAIN OBJECTION!!
+	Start to append err_log.c
+	because it will play huge role in the future.
+	
+	write script for reading config..
+	I think now it is essential because we need to built in custom functions support, so let's built it in now. Not full functionality, but rather small easy one. Just read and divide them into what is what.
+
+
 	Add function to use correct ip. For example to use LAN instead of reverse-proxy at home.
 
 	!!!!Maybe divide main file into multiple for the sake of readability

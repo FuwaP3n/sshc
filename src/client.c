@@ -12,7 +12,6 @@ struct LOGIN{
 void action(char *act, char *param1, char *param2){
 }
 
-
 void get_user_ip(struct LOGIN* login, char *userip){
 	int x = 0;
 	int y = 0;
@@ -29,16 +28,20 @@ void get_user_ip(struct LOGIN* login, char *userip){
 	login->ip[y] = '\0';
 }
 
-char * get_config_file(){
-	char *homefolder = malloc(sizeof(getenv("HOME")));
-	homefolder = getenv("HOME");
-	return strcomb(homefolder, "/.sshc_config");	
+ get_config_file(){
+	char *config_path = strcomb(getenv("HOME"), "/.config/sshc/config");
+	FILE *config;
+	config = fopen(config_path, "r");
+	if()
+	return 	
 }
 
 
 int main(int argc, char *argv[]){
 	struct LOGIN login;
-	if(argv[1][0]=='-' && argv[1][1]=='c'){ //Check if use autologin
+	
+	
+	if(strcmp(argv[1], "-c")){ //Check if use autologin
 		printf("Using auto login\n");
 		exit(0);
 	}

@@ -1,0 +1,4 @@
+gcc -ggdb -c -o config.o config.c
+gcc -ggdb -c -o string.o string.c
+gcc -ggdb -c -o err_log.o err_log.c
+gcc -ggdb -o main *.o

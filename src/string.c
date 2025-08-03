@@ -38,7 +38,12 @@ bool strcmp(char *str1, char *str2){
 	return false;
 }
 
-
+void strcpy(char *source, char *dest){
+	for(int i=0; i<strlen(source); i++){
+		dest[i] = source[i];
+	}
+	dest[strlen(source)]='\0';
+}
 
 /*TEST MAIN
 int main(){
